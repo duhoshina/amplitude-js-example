@@ -1,4 +1,3 @@
-```markdown
 # Integração de Aplicação React com Amplitude
 
 Este repositório contém um exemplo prático de como integrar uma aplicação React com o Amplitude, uma ferramenta poderosa de análise de comportamento de usuários.
@@ -49,7 +48,7 @@ Este repositório contém um exemplo prático de como integrar uma aplicação R
 
 1. Crie um arquivo `amplitudeService.js` no diretório raiz do seu projeto e adicione a seguinte configuração:
 
-   ```javascript
+```javascript
   import * as amplitude from '@amplitude/analytics-browser';
 
   const initializeAmplitude = () => {
@@ -62,11 +61,11 @@ Este repositório contém um exemplo prático de como integrar uma aplicação R
   };
 
   export { initializeAmplitude, logEvent };
-   ```
+```
 
 2. No seu componente principal (`App.js`), inicialize o Amplitude:
 
-   ```javascript
+```javascript
    import React, { useEffect } from 'react';
    import { initializeAmplitude } from './services/amplitudeService';
 
@@ -83,7 +82,7 @@ Este repositório contém um exemplo prático de como integrar uma aplicação R
    }
 
    export default App;
-   ```
+```
 
 ## Uso
 
@@ -139,7 +138,5 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 ---
 
 Para mais informações, consulte a [documentação oficial do Amplitude](https://help.amplitude.com/hc/en-us).
-
-```
 
 Substitua `"SUA_API_KEY_AQUI"` com sua chave de API do Amplitude antes de usar o projeto. Se desejar, ajuste o conteúdo conforme necessário para refletir mais detalhes ou especificidades do seu projeto.
